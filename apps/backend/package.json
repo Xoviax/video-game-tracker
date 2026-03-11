@@ -8,8 +8,7 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "lint": "eslint src/",
-    "vercel-build": "prisma migrate deploy && prisma db seed && npm run build",
-    "postinstall": "prisma generate"
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "cors": "^2.8.6",
